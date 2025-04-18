@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .project {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }   
+ 
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .btn {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pooja Kumari Sah</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm a beginner web developer learning HTML, CSS, and JavaScript. I'm passionate about building clean and simple websites. I enjoy learning new things and solving real-world problems with code.</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project">
+      <h3>My First Website</h3>
+      <p>This is a basic HTML and CSS website I made as my first project. It’s fully responsive and beginner-friendly.</p>
+        <a href="#" class="btn">View projects</a>
+    </div>
+
+    <div class="project">
+        <h3>login page</h3>
+        <p>More projects will be added here as I keep learning and improving.</p>
+        <a href="calculator.html" class="btn">View calculator</a>
+      </div>
+
+    <div class="project">
+      <h3>login page</h3>
+      <p>this is the simple login page Demo</p>
+      <a href="login.html" class="btn">View login page</a>
+    </div>
+
+    <div class="project">
+        <h3>E-commerce design</h3>
+        <p>this is the simple e-commerce page Demo of smart phone</p>
+        <a href="lkc.html" class="btn">View  page</a>
+      </div>
+
+      <div class="project">
+        <h3>E-commerce design of Amazon</h3>
+        <p>this is the simple e-commerce page Demo of frontend Amazon</p>
+        <a href="amazon.html" class="btn">View amazon page</a>
+      </div>
+
+
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: pg8661741@gmail.com</p>
+    <p>Facebook: <a href="https://www.facebook.com/share/1HGZVYkaNA/" target="_blank">facebook.com/in/Pooja Gupta</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 pooja kumari sah. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scroll effect
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
